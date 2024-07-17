@@ -73,7 +73,7 @@ console.log(a);
 a/=3;
 console.log(a);
 
-*/
+
 let a = 3, b = 2, c= "3";
 
 let z = a == b;
@@ -94,3 +94,85 @@ console.log(z);
 
 z = a >= 3;
 console.log(z);
+
+
+let a = 9;
+
+if (a % 2 == 0){
+    console.log("El numero " + a + " es par");
+}else
+    console.log("El numero "+ a + " no es par");
+
+
+
+let edad = 18, adulto = 18;
+
+if (edad >= adulto){
+    console.log("La persona con edad: "+edad+" es mayor de edad");
+
+}else
+    console.log("La persona con edad: "+edad+" es menor de edad");
+
+
+//operador and
+
+let a = 5, min = 0, max = 10;
+
+if (a >= min && a <= max){
+    console.log("El numero: "+a+ " se encuentra dentro del rango: ("+min+", "+max+")");
+}else
+console.log("El numero: "+a+ " no se encuentra dentro del rango: ("+min+", "+max+")");
+
+//operador or
+
+let vacaciones = false, diaDescanso = true;
+
+if (vacaciones || diaDescanso){
+    console.log("Puede ir al partido");
+}else
+console.log("El padre esta ocupado");
+
+
+
+let resultado = 3>2 ? "Verdadero" : "Falso";
+
+console.log(resultado);
+
+let numero = 9;
+
+resultado = numero % 2 == 0 ? "Es par" : "Es impar";
+console.log(resultado);
+
+
+
+let miNumero = "19";
+//console.log(typeof(miNumero)); string
+
+let edad = Number(miNumero);
+console.log(edad);
+
+if (isNaN(edad)){
+    console.log("No es un numero")
+}else{
+    if (edad >= 18){
+        console.log("Puede votar");
+    }else{
+        console.log("No puede votar");
+    }
+}
+
+if (isNaN(edad)){
+    console.log("No es un numero")
+}else{
+    
+    console.log(edad >=18 ? "Puede votar" : "No puede votar");
+
+}
+*/
+
+let x = 5, y = 10, z = ++x + y--;
+console.log(z, x, y);
+let resultado = 4 + 5 * 6 / 3;
+console.log(resultado);
+resultado = (4+5) * 6 / 3;
+console.log(resultado);
