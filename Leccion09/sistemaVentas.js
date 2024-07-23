@@ -96,12 +96,12 @@ let orden1 = new Orden();
 orden1.agregarProducto(producto1);
 orden1.agregarProducto(producto2);
 orden1.mostrarOrden();
-let orden2 = new Orden();
+let orden2 = new Orden(); //crea orden
 let producto3 = new Producto("Cinturon", 300);
 orden2.agregarProducto(producto1);
 orden2.agregarProducto(producto3);
 orden2.agregarProducto(producto2);
-orden2.agregarProducto(producto1);
+orden2.agregarProducto(producto2);
 orden2.agregarProducto(producto3);
 orden2.agregarProducto(producto2); //tira mensaje de error
 orden2.mostrarOrden();
