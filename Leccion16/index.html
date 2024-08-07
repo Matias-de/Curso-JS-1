@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo DOM con JavaScript</title>
+    <!-- <style>
+        .azul{
+            color: blue;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <h1 id='cabecero'class="azul">Ejemplo DOM con JavaScript</h1>
+    <p id="parrafo1"class="azul">Saludos!</p>
+    <p id="parrafo2" class="azul">Otro párrafo</p> -->
+    <!-- <form id="formulario">
+        Nombre: <input type="text" name="nombre" value="Juan">
+        <br>
+        Apellido: <input type="text" name="apellido" value="Perez">
+        <br>
+        
+    </form>
+    <button onclick="mostrarValores()">Mostrar</button>
+    <div id="valores"></div>
+        <script>
+            function mostrarValores(){
+                let formulario = document.forms["formulario"];
+                let texto = "";
+                // for(let elemento of formulario){
+                //     texto+=elemento.value + "<br/>";
+                // }
+                let nombre = formulario["nombre"];
+                console.log(nombre);
+                let apellido = formulario["apellido"];
+                texto = nombre.value + "<br/>" + apellido.value;
+                document.getElementById("valores").innerHTML = texto;
+            }
+        </script> 
+    <script> 
+        // let parrafos = document.getElementsByTagName("p");
+        // console.log(`Nro. Párrafos: ${parrafos.length}`);
+        // for (let i=0; i<parrafos.length; i++) {
+        //     console.log(`i: ${i} - ${parrafos[i].innerHTML}`);
+        
+        // }
+        //  let elementos = document.getElementsByClassName("azul");
+        // let elementos = document.querySelectorAll("p.azul"); 
+        // console.log(`Nro. Elemetos: ${elementos.length}`);
+        //  for (let elemento of elementos){
+        //     console.log(`${elemento.innerHTML}`);
+        //  }
+         
+        // }
+        // let cabecero = document.getElementById('cabecero');
+        // console.log(`valor cabecero: ${cabecero.innerHTML}`);
+        // let parrafo = document.getElementById('parrafo');
+        // console.log(`valor parrafo:${parrafo.innerHTML}`);
+        // parrafo.innerHTML = "Nuevo valor del párrafo";
+        // cabecero.innerHTML = "Nuevo Cabecero";
+    // </script>
+    -->
+    <h1 id="titulo">Manejo DOM con JavaScript</h1>
+    <button onclick="mostrar()">Mostrar</button>
+    <br>
+    <!-- <img src="http://globalmentoring.com.mx/imagenes/javascript.png" id="imagen"alt="Imagen Javascript"> -->
+
+    <script>
+        // document.write("Saludos desde JavaScript");
+        // function mostrar(){
+        //     document.write("Adios");
+        // }
+
+        // function mostrar(){
+            // document.getElementById("titulo").innerHTML +="<br>Nuevo Título";
+           // document.getElementById("imagen").src = "http://globalmentoring.com.mx/imagenes/html5.png";
+        // }
+        function mostrar(){
+            document.getElementById("titulo").style.color = "blue";
+            
+        }
+    </script>
+    
+</body>
+</html>
