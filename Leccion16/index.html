@@ -60,10 +60,16 @@
     // </script>
     -->
     <h1 id="titulo">Manejo DOM con JavaScript</h1>
-    <button onclick="mostrar()">Mostrar</button>
+    <!-- <button onclick="mostrar()">Mostrar</button> -->
     <br>
     <!-- <img src="http://globalmentoring.com.mx/imagenes/javascript.png" id="imagen"alt="Imagen Javascript"> -->
-
+    <!-- <div id="mostrar"></div> -->
+    <form id="forma">
+        Nombre: <input type="text" id="nombre"/>
+        <br><br>
+        Apellido: <input type="text" id="apellido"/>
+    </form>
+    
     <script>
         // document.write("Saludos desde JavaScript");
         // function mostrar(){
@@ -74,11 +80,69 @@
             // document.getElementById("titulo").innerHTML +="<br>Nuevo Título";
            // document.getElementById("imagen").src = "http://globalmentoring.com.mx/imagenes/html5.png";
         // }
-        function mostrar(){
-            document.getElementById("titulo").style.color = "blue";
+        // function mostrar(){
+        //     document.getElementById("titulo").style.color = "blue";
             
-        }
-    </script>
+        // }
+        // function cambiarTexto(titulo){
+        //     titulo.innerHTML = "Nuevo Titulo";
+        // }
+        // document.getElementById("titulo").onclick = cambiarTexto;
+    
+        //  function cambiarTexto(titulo){
+        //         document.getElementById("mostrar").innerHTML = "Nuevo Contenido";
+        //  }
+        // function entrar(){
+        //     alert("Entrando a la página web");
+        //     let texto = "";
+        //     if(navigator.cookieEnabled){
+        //         texto = "Cookies habilitadas";
+        //     }else{
+        //         texto = "Cookies inhabilitadas";
+        //     }
+        //     document.getElementById("mostrar").innerHTML = texto;
+        // }
+        // function convertir(nombreInput){
+           
+        //     nombreInput.value = nombreInput.value.toUpperCase();
+        // }
+        // function rojo(tituloH1){
+        //     tituloH1.style.color = "red";
+        // }
+        // function azul(tituloH1){
+        //     tituloH1.style.color = "blue";
+        // }
+        // function verde(titulo){
+        //     titulo.style.color="green";
+        // }   
+        // function cambiar(elementoImput){
+        //     elementoImput.style.background = "yellow";
+        // }
+        // function regresar(elementoImput){
+        //     elementoImput.style.background = "white";
+        // }
+        const forma = document.getElementById("forma");
+        forma.addEventListener("focus", (evento)=>{evento.target.style.background="pink"}, true);
+        
+        forma.addEventListener("blur", (evento)=>{evento.target.style.background="";}, true);
+        //  document.getElementById("nombre").addEventListener("focus", (evento)=>{
+        //     evento.target.style.background="pink";
+        //  });
+        //  document.getElementById("nombre").addEventListener("blur", (evento)=>{
+        //     evento.target.style.background="";
+        //  });
+        //  document.getElementById("apellido").addEventListener("focus", cambiar);
+        //  document.getElementById("apellido").addEventListener("blur", regresar);
+
+        //  function cambiar(evento){
+        //     let componente = evento.target;
+        //     componente.style.background = "yellow";
+        //  }
+        //  function regresar(evento){
+        //     let componente = evento.target;
+        //     componente.style.background = "white";
+        //  }
+        </script>
     
 </body>
 </html>
